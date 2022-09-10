@@ -2,7 +2,7 @@
   box-sizing: border-box;  
   margin: 0;
   padding: 0;
-  background-image: url(https://wallpaper.dog/large/17138243.jpg);
+  background-image: url("https://wallpaper.dog/large/17138243.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
