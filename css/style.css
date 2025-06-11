@@ -1,4 +1,4 @@
-/* Global reset */
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -15,41 +15,50 @@ body {
   min-height: 100vh;
 }
 
-/* Links */
 a {
   text-decoration: none;
   color: #146c94;
 }
+
 a:hover {
   text-decoration: underline;
 }
 
-/* Container */
 .wrapper {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 3rem auto;
   padding: 2rem 1.5rem;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
-/* Header */
-header {
+/* Header with Logo */
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
   text-align: center;
-  margin-bottom: 2rem;
 }
-header h1 {
+
+.logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.title-group h1 {
   font-size: 2.2rem;
   font-weight: 600;
   color: #222;
+  margin-bottom: 0.2rem;
 }
-header p {
+
+.title-group p {
   color: #666;
   font-size: 1rem;
-  margin-top: 0.5rem;
 }
 
 /* Section titles */
@@ -64,6 +73,7 @@ h2 {
   list-style: none;
   padding-left: 0;
 }
+
 .contact li {
   margin-bottom: 0.5rem;
 }
@@ -78,13 +88,16 @@ h2 {
   box-shadow: 0 4px 12px rgba(0,0,0,0.04);
   transition: transform 0.2s ease;
 }
+
 .vacancy .card:hover {
   transform: scale(1.01);
 }
+
 .vacancy h3 {
   margin: 0;
   font-size: 1.2rem;
 }
+
 .availability {
   margin-top: 0.5rem;
   font-weight: 600;
