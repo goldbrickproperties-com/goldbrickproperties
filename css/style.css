@@ -1,81 +1,100 @@
-/* General Reset */
+/* Global reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+  background-attachment: fixed;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  min-height: 100vh;
 }
 
-.container {
-    width: 90%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1.5rem 0;
+/* Links */
+a {
+  text-decoration: none;
+  color: #146c94;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 /* Header */
 header {
-    background-color: #1e3a8a;
-    color: #fff;
-    text-align: center;
-    padding: 2rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
 }
-
 header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #222;
 }
-
 header p {
-    font-size: 1.1rem;
+  color: #666;
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
-/* Sections */
+/* Section titles */
 h2 {
-    font-size: 1.5rem;
-    color: #1e3a8a;
-    margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 0.5rem;
 }
 
-a {
-    color: #1e3a8a;
-    text-decoration: none;
+/* Contact section */
+.contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+.contact li {
+  margin-bottom: 0.5rem;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Vacancy card */
+.vacancy .card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  transition: transform 0.2s ease;
 }
-
-.contact p,
-.vacancies .listing {
-    margin: 0.5rem 0;
+.vacancy .card:hover {
+  transform: scale(1.01);
 }
-
-.vacancies .listing {
-    background-color: #fff;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 6px;
+.vacancy h3 {
+  margin: 0;
+  font-size: 1.2rem;
 }
-
 .availability {
-    display: block;
-    margin-top: 0.5rem;
-    font-weight: bold;
-    color: #4caf50;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #2e7d32;
 }
 
 /* Footer */
 footer {
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-    color: #555;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 2rem;
 }
